@@ -49,3 +49,8 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/sirius/sirius-vendor.mk)
+
+
+# OTA ID
+PRODUCT_PROPERTY_OVERRIDES += \
+otaupdater.otaid=liquidsirius
